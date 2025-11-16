@@ -162,8 +162,10 @@ mcp-map-servers/
 │   └── trip_history.json            # Generated data
 ├── requirements.txt
 ├── .env.example
-└── README.md
+└── README.md                        # This file
 └── REFLECTION.md                    # Lessons learned and potential next steps
+└── SUMMARY.md                       # Summary of the huggingface MCP article and existing map servers
+└── Screencast.mp4                   # Video showcasing examples and explaining implementation
 ```
 
 ---
@@ -271,3 +273,12 @@ This allows the agent to:
 4. Add routing cases to `execute_tool()`
 5. Update system prompt in `agent.py`
 6. Optional: Write tests
+
+---
+
+## Assignment Deliverables
+
+1. SUMMARY.md (Summary of the huggingface MCP article and existing map servers)
+2. REFLECTION.md (Lessons learned and potential next steps)
+3. Screencast: 
+https://github.com/user-attachments/assets/a032c84c-b936-4008-a52b-57ab35f456a4

@@ -280,5 +280,6 @@ This allows the agent to:
 
 1. SUMMARY.md (Summary of the huggingface MCP article and existing map servers)
 2. REFLECTION.md (Lessons learned and potential next steps)
-3. Screencast: 
+3. Screencast:
+  
 https://github.com/user-attachments/assets/a032c84c-b936-4008-a52b-57ab35f456a4

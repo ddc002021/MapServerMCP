@@ -1,0 +1,9 @@
+Dany Chahine - 202107582
+
+EECE798S - Assignment 5
+
+# Reflection on MCP Map Servers Implementation
+
+Building these three MCP servers taught me that the real power of the Model Context Protocol lies in composability (watching the agent automatically chain tools together like geocoding an address, then fetching its weather without explicit programming was impressive). I learned that clear tool descriptions are critical for agent performance; vague descriptions led to parameter errors, while detailed ones with examples dramatically improved accuracy. Working with public APIs revealed important constraints like rate limiting and an interesting limitation: distance calculations can feel "wrong" to humans even when mathematically correct. For example, geocoding "Central Park" returns its center point, so a route might show 2km when you're actually 500m from the park's edge (humans might consider reaching the border as "arriving," not the center). This gap between technical accuracy and human perception is worth documenting in production systems.
+
+The biggest challenges were choosing the right servers (making the project accessible by choosing map servers that dont require authentication or an API key) and testing real API integrations. Moving forward, improvements would include more intensive testing for better accuracy measurement, making the tools more robust, retry logic for failures, and importing real travel data from Google Maps or fitness apps. More ambitious enhancements could add machine learning to predict trips based on patterns, real-time traffic integration, carbon footprint calculations, and a web interface for visualizing routes. The modular MCP architecture makes all these extensions straightforward (we can add new servers or tools without rewriting existing code), which proves that MCP's promise of composable AI tools works beautifully in practice.
